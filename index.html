@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Know Each Other ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="heart" id="heart">♥️</div>
+
+    <p class="small-title">♡ A LITTLE SPACE JUST FOR YOU ♡</p>
+    <h1>Let's know you better ✨</h1>
+    <p class="subtitle">
+      Everyone has a story. I'd love to know a little more about yours.
+    </p>
+
+    <form id="friendForm">
+      <label for="name">First, what should I call you? 💌</label>
+      <input id="name" type="text" maxlength="40"
+             placeholder="Your name or nickname" required>
+
+      <label for="color">What's your favorite color? 🎨</label>
+      <select id="color" required>
+        <option value="">Choose a color...</option>
+        <option>Pink</option>
+        <option>Purple</option>
+        <option>Blue</option>
+        <option>Red</option>
+        <option>Green</option>
+        <option>Black</option>
+        <option>White</option>
+        <option>Yellow</option>
+      </select>
+
+      <label for="smile">What's a little thing that makes you smile? ☀️</label>
+      <textarea id="smile" rows="2"
+        placeholder="It can be anything..." required></textarea>
+
+      <label for="personality">How would you describe yourself? 🌷</label>
+      <select id="personality" required>
+        <option value="">Choose what feels like you...</option>
+        <option>Quiet but thoughtful</option>
+        <option>Funny and playful</option>
+        <option>Shy at first, talkative later</option>
+        <option>Friendly and outgoing</option>
+        <option>Sensitive and caring</option>
+        <option>A little bit of everything</option>
+      </select>
+
+      <label for="comfort">When you're having a bad day, what helps most? 🤍</label>
+      <select id="comfort" required>
+        <option value="">Choose an answer...</option>
+        <option>Someone listening to me</option>
+        <option>Someone making me laugh</option>
+        <option>Some time alone</option>
+        <option>Music or a favorite movie</option>
+        <option>A kind message</option>
+        <option>It depends on the day</option>
+      </select>
+
+      <label for="dream">What's one dream you hope to achieve? 🌙</label>
+      <textarea id="dream" rows="3"
+        placeholder="Tell me about something you wish for..."
+        required></textarea>
+
+      <label for="friendship">What matters most to you in a friendship? 🫶</label>
+      <select id="friendship" required>
+        <option value="">Choose an answer...</option>
+        <option>Honesty</option>
+        <option>Loyalty</option>
+        <option>Being able to laugh together</option>
+        <option>Feeling understood</option>
+        <option>Being there for each other</option>
+        <option>Respecting each other's space</option>
+      </select>
+
+      <label for="song">What song describes your mood or life lately? 🎧</label>
+      <input id="song" type="text" maxlength="100"
+             placeholder="A song, artist, or just a mood">
+
+      <label for="misunderstood">
+        What's something people often misunderstand about you? 💭
+      </label>
+      <textarea id="misunderstood" rows="3"
+        placeholder="Only share what you feel comfortable sharing"></textarea>
+
+      <label for="message">
+        Is there anything else you'd like me to know about you? 💌
+      </label>
+      <textarea id="message" rows="3"
+        placeholder="Your little corner to say anything..."></textarea>
+
+      <p class="privacy-note">
+        No pressure to share anything too personal. Your answers are shown
+        on this page and aren't automatically sent to anyone.
+      </p>
+
+      <button type="submit">Let me introduce myself ♡</button>
+    </form>
+    <section id="result" hidden aria-live="polite">
+      <h2 id="greeting"></h2>
+      <p id="resultText"></p>
+      <div id="answers"></div>
+      <p class="love-note">
+        Thank you for sharing a little piece of who you are. ♡
+      </p>
+      <button type="button" id="again">Go back and edit answers ↻</button>
+    </section>
+
+    <p class="footer">Made with care, just for you ♡</p>
+  </main>
+</body>
+</html>
